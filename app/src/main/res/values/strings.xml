@@ -1,0 +1,219 @@
+<resources>
+    <string name="app_name">تسبیح</string>
+    <string name="title_home">خانه</string>
+    <string name="title_dashboard">داشبرد</string>
+    <string name="title_notifications">اعلان ها</string>
+    <string name="search">جستجو</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_splash">Splash</string>
+
+    <string name="title_activity_full_screen_splash">FullScreenSplash</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_start">StartActivity</string>
+    <string name="title_activity_drawer">Drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="title_activity_nav_main">NavMain</string>
+    <string name="title_activity_sidebar">sidebar</string>
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system eventsCalendar. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+    <string name="appwidget_text">تسبیح</string>
+    <string name="add_widget">Add widget</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">شماره موبایل خود را وارد کنید</string>
+    <string name="prompt_password">رمز عبور</string>
+    <string name="action_sign_in">ارسال کد فعال سازی</string>
+    <string name="invalid_email">ایمیل وارد شده نامعتبر است</string>
+    <string name="invalid_password">رمز عبور بسیار کوتا است</string>
+    <string name="incorrect_password">رمز عبور نا درست است</string>
+    <string name="field_required">باید تمامی فیلد ها را پر کنید</string>
+    <string name="submit">تایید</string>
+    <string name="save">ذخیره</string>
+    <string name="restaurant">رستوران</string>
+    <string name="hotel">هتل</string>
+    <string name="coffee_shop">کافی شاپ</string>
+    <string name="religious_places">مذهبی</string>
+    <string name="hospital">بیمارستان</string>
+    <string name="university">دانشگاه</string>
+    <string name="residency">اقامتگاه</string>
+    <string name="dentistry">دندان پزشکی</string>
+    <string name="shop">فروشگاه</string>
+    <string name="gym">باشگاه</string>
+    <string name="other">سایر</string>
+    <string name="adyeh">ادعیه</string>
+    <string name="quran">قرآن</string>
+    <string name="waiting">لطفا شکیبا باشید...</string>
+    <string name="cannot_retrieve_image">فعلا قادر به بارگزاری عکس نیستیم</string>
+    <string name="settings">تنظیمات</string>
+    <string name="favorite">علاقه مندی ها</string>
+    <string name="logout">خروج از حساب کاربری</string>
+    <string name="messages">پیام ها</string>
+    <string name="map">نقشه</string>
+    <string name="podcast">پادکست</string>
+    <string name="online_pray">زیارت آنلاین</string>
+    <string name="zekr_counter">ذکر شمار</string>
+    <string name="quran_adyeh">قرآن و ادعیه</string>
+    <string name="qibla_compass">قبله‌نما</string>
+    <string name="ok">باشه</string>
+    <string name="request_failure_text">مشکلی پیش آمده بعدا دوباره تلاش کنید</string>
+    <string name="mosque">مسجد</string>
+    <string name="edit">ویرایش</string>
+    <string name="add_successfully">با موفقیت اضاف شد</string>
+    <string name="favorite_empty_list">شما هیچ مکانی را به علاقه مندی ها اضافه نکردید</string>
+    <string name="add_event_title">اطلاعات رویداد را وارد کنید</string>
+    <string name="add_image">افزودن تصویر</string>
+    <string name="enable_event">رویداد فعال</string>
+    <string name="disable_event">رویداد غیر فعال</string>
+    <string name="persian_language">فارسی</string>
+    <string name="arabic_language">العربی</string>
+    <string name="select_language_warning">لطفا یک زبان را انتخاب کنید</string>
+    <string name="my_places">مکان های من</string>
+    <string name="sign_up">ثبت نام</string>
+    <string name="double_back_pressed">برای خروج دکمه بازگشت را دوباره لمس کنید.</string>
+    <string name="no">خیر</string>
+    <string name="myPlace_empty_list">شما هیچ مکانی را به نقشه اضافه نکردید</string>
+    <string name="reminder_text_validation">لطفا متن یادآور را وارد کنید</string>
+    <string name="reminder">یادآورها</string>
+    <string name="reminder_empty_list">شما هیچ یادآوری ثبت نکردید.</string>
+    <string name="azan_fajr">اذان صبح</string>
+    <string name="azan_zohr">اذان ظهر</string>
+    <string name="azan_asr">اذان عصر</string>
+    <string name="azan_maqrib">اذان مغرب</string>
+    <string name="azan_ishaa">اذان عشا</string>
+    <string name="persian">Persian (فارسی)</string>
+    <string name="arabic">Arabic (العربی)</string>
+    <string name="guest_user">کاربر مهمان</string>
+    <string name="font_size">اندازه قلم</string>
+    <string name="text_color">رنگ متن</string>
+    <string name="eqame">اقامه</string>
+    <string name="shiaa">شیعه</string>
+    <string name="soni">سنی</string>
+    <string name="azan_setting">تنظیمات اذان</string>
+    <string name="sahn_jame">صحن جامع رضوی</string>
+    <string name="sahn_azadi">صحن آزادی</string>
+    <string name="sahn_jomhuri">صحن جمهوری</string>
+    <string name="sahn_enghelab">صحن انقلاب</string>
+    <string name="no_ziarat_message">در حال حاضر امکان برقراری ارتباط آنلاین موجود نیست</string>
+    <string name="do_not_disturb_warning">شما در وضعیت مزاحم نشوید هستید. در این وضعیت امکان تغییر حالت به حالت صدا دار امکان پذیر نیست.</string>
+    <string name="refresh_key">REFRESH</string>
+    <string name="remove_success">مکان مورد نظر از لیست علاقه مندی ها حذف شد.</string>
+    <string name="saved_success">اطلاعات شما با موفقیت ذخیره شد</string>
+    <string name="saved_error">خطا در ذخیره اطلاعات</string>
+
+
+    <string-array name="category_list">
+        <item>@string/coffee_shop</item>
+        <item>@string/hospital</item>
+        <item>@string/gym</item>
+        <item>@string/dentistry</item>
+        <item>@string/hotel</item>
+        <item>@string/mosque</item>
+        <item>@string/university</item>
+        <item>@string/shop</item>
+        <item>@string/other</item>
+    </string-array>
+</resources>

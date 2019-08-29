@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".Start_freg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/rezablur">
+
+                <!--  <ImageButton
+                      android:id="@+id/imageView3"
+                      style="@style/PrimaryFlatButton"
+                      android:layout_width="48dp"
+                      android:layout_height="48dp"
+                      android:layout_marginStart="8dp"
+                      android:layout_marginLeft="8dp"
+                      android:layout_marginTop="8dp"
+                      android:background="@android:color/transparent"
+                      android:theme="@style/PrimaryFlatButton"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:srcCompat="@drawable/ic_access_time_black_24dp" />
+
+                  <TextView
+                      android:id="@+id/textView2"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_margin="1dp"
+                      android:layout_marginTop="16dp"
+                      android:paddingTop="10dp"
+                      android:gravity="center"
+                      android:text="بوشهر"
+                      android:textAlignment="center"
+                      android:textColor="#FFF"
+                      android:textSize="24sp"
+                      app:layout_constraintStart_toEndOf="@+id/imageView3"
+                      app:layout_constraintTop_toTopOf="parent" />-->
+
+
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="224dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="13:00"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textColor="#FFF"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/volumeButton"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginBottom="144dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="ON"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <ImageButton
+                    android:id="@+id/calendar_btn"
+                    android:layout_width="68dp"
+                    android:layout_height="68dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="144dp"
+                    android:background="@android:color/transparent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_event_note_black_24dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:src="@drawable/add_baner" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:background="@drawable/shadow"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:outlineAmbientShadowColor="#000"
+                android:outlineSpotShadowColor="#000"
+                android:padding="10dp"
+                android:showDividers="beginning"
+                android:translationZ="100dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <Button
+                        android:id="@+id/textView7"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:gravity="right|center"
+                        android:text="رویدادها"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <!--  <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <include
+                            layout="@layout/cardview"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center" />
+
+                        <include
+                            layout="@layout/cardview"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center" />
+
+                        <include
+                            layout="@layout/cardview"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <include
+                            layout="@layout/cardview"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center" />
+
+                        <include
+                            layout="@layout/cardview"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center" />
+
+                        <include
+                            layout="@layout/cardview"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:layout_column="2"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+
+                </HorizontalScrollView>-->
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16sp"
+                    android:text="رویدادی برای نمایش وجود ندارد"
+                    android:id="@+id/empty_text"
+                    android:layout_centerInParent="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_event"
+                    android:layout_width="match_parent"
+                    android:layout_margin="8dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

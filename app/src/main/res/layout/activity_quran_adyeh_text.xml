@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@drawable/quran_fragment_background"
+    tools:context=".QuranAdyehTextActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_header_name"
+        android:text=""
+        android:gravity="center"
+        android:textColor="@color/md_green_600"
+        android:fontFamily="@font/neirizi_font"
+        android:textSize="22sp"
+        android:id="@+id/header_name_txt" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/ic_help"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:id="@+id/tooltip" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@id/header_name_txt"
+        android:layout_above="@id/player_wrapper"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:id="@+id/quran_recycler"
+        android:layout_height="match_parent" />
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="24dp"
+        app:indicatorName="BallScaleIndicator"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        app:indicatorColor="@color/gold"
+        android:id="@+id/progress_text_load" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/player_wrapper"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gold" />
+
+
+            <SeekBar
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:id="@+id/player_seek_bar"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:thumb="@drawable/custom_thumb"
+                android:layout_marginTop="8dp"
+                />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/ic_play2"
+                android:padding="5dp"
+                android:layout_marginLeft="24dp"
+                android:layout_below="@id/player_seek_bar"
+                android:id="@+id/play_btn"
+                android:visibility="gone" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                app:indicatorName="BallScaleIndicator"
+                android:visibility="visible"
+                android:layout_below="@id/player_seek_bar"
+                app:indicatorColor="@color/gold"
+                android:id="@+id/progress_loading" />
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="انتخاب قاری"
+            android:textColor="@color/gold"
+            android:layout_toRightOf="@id/player_seek_bar"
+            android:layout_margin="8dp"
+            android:background="@drawable/rounded_gold_drawable"
+            android:gravity="center"
+            android:padding="8dp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

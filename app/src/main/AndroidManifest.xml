@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ir.maxivity.tasbih">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.wifi" />
+
+    <application
+        android:name=".NasimApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:supportsRtl">
+        <activity android:name=".activities.SettingActivity"></activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="ir.maxivity.tasbih.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_path" />
+        </provider>
+
+        <activity android:name=".activities.AddMessagesActivity" />
+        <activity android:name=".activities.BackgroundActivity" />
+        <activity android:name=".activities.ReminderActivity" />
+        <activity android:name=".activities.BackgroundsActivity" />
+        <activity android:name=".activities.MyPlacesActivity" />
+        <activity android:name=".activities.SelectLanguageActivity" />
+        <activity android:name=".activities.FavoritePlacesActivity" />
+        <activity android:name=".MessagesActivity" />
+        <activity android:name=".ZiaratOnlineActivity" />
+        <activity android:name=".QuranAdyehTextActivity" />
+        <activity android:name=".ZekrsList" />
+        <activity android:name=".QuranAdyeh" />
+        <activity android:name=".MessagesList" />
+        <activity android:name=".SendMessage" />
+        <activity
+            android:name=".Login"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+
+        <service
+            android:name=".reminderTools.MyJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <activity
+            android:name=".Calendar"
+            android:theme="@style/CalendarTheme" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <meta-data
+            android:name="co.ronash.pushe.token"
+            android:value="PUSHE_944870440943" />
+
+        <receiver android:name=".Widget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".Sidebar"
+            android:label="@string/title_activity_sidebar"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FullScreenSplash"
+            android:label="@string/app_name"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:supportsRtl="true" />
+        <activity android:name=".ZekrCounter" />
+        <activity android:name=".Qiblah_compass" />
+        <activity android:name=".BaseActivity" />
+
+        <receiver android:name=".reminderTools.AlarmReceiver">
+            <intent-filter>
+                <action android:name="ir.maxivity.tasbih.intent.action.ALARM" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reminderTools.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".reminderTools.AzanReciever" />
+        <receiver
+            android:name=".reminderTools.NotificationDismissReciever"
+            android:exported="false" />
+
+        <service
+            android:name=".reminderTools.AzanJobIntentService"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+    </application>
+
+</manifest>

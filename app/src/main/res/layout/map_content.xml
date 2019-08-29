@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="520dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="حذف فیلتر ها"
+        android:padding="8dp"
+        android:background="@drawable/rounded_event_background"
+        android:textColor="@color/primary"
+        android:layout_below="@id/search_bar_wrapper"
+        android:layout_margin="8dp"
+        android:id="@+id/delete_filters" />
+
+
+    <ImageView
+        android:id="@+id/location_marker"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:src="@drawable/ic_marker_blue"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:paddingBottom="100dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:id="@+id/search_bar_wrapper">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/ic_search_vector"
+            android:id="@+id/search_icon" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@id/search_icon"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/gray_700"
+            android:gravity="right"
+            app:backgroundTint="@color/gray_400"
+            android:id="@+id/search_edt_text" />
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_filter"
+            android:id="@+id/filter_icon" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
